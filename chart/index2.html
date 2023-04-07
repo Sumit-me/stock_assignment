@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Stock Charts</h1>
+      <form id="search-form">
+        <label for="symbol">Enter stock symbol:</label>
+        <input type="text" id="symbol" name="symbol" required>
+        <label for="ratio">Enter ratio:</label>
+        <select id="ratio" name="ratio">
+          <option value="open">Open</option>
+          <option value="high">High</option>
+          <option value="low">Low</option>
+          <option value="close">Close</option>
+        </select>
+        <button type="submit">Get Chart</button>
+      </form>
+    </div>
+    <div style="width: 800px; height: 400px;">
+      <canvas id="chart"></canvas>
+    </div>
+  </body>
+</html>
